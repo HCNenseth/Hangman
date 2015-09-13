@@ -6,6 +6,14 @@
     <string name="play_button">Play</string>
     <string name="info_button">Info</string>
 
+    <string name="gallows">Info</string>
+    <string name="head">Info</string>
+    <string name="body">Info</string>
+    <string name="left_arm">Info</string>
+    <string name="right_arm">Info</string>
+    <string name="left_leg">Info</string>
+    <string name="right_leg">Info</string>
+
     <string name="main_image_description">Main background image</string>
 
 </resources>

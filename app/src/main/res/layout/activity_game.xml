@@ -16,6 +16,71 @@
         android:gravity="center"
         android:paddingTop="15dp">
 
+
+        <ImageView
+            android:id="@+id/gallows"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/gallows"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:src="@drawable/hangman_zero"/>
+
+        <ImageView
+            android:id="@+id/head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/head"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:src="@drawable/hangman_one"/>
+
+        <ImageView
+            android:id="@+id/body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/body"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:src="@drawable/hangman_two"/>
+
+        <ImageView
+            android:id="@+id/left_arm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/left_arm"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:src="@drawable/hangman_three"/>
+
+        <ImageView
+            android:id="@+id/right_arm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/right_arm"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:src="@drawable/hangman_four"/>
+
+        <ImageView
+            android:id="@+id/left_leg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/left_leg"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:src="@drawable/hangman_five"/>
+
+        <ImageView
+            android:id="@+id/right_leg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/right_leg"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:src="@drawable/hangman_six"/>
+
+
     </RelativeLayout>
 
 </LinearLayout>
