@@ -39,4 +39,13 @@ public class LetterAdapter extends BaseAdapter {
         return letterBtn;
     }
 
+    @Override
+    public Object getItem(int arg0) {
+        return null;
+    }
+
+    @Override
+    public long getItemId(int arg0) {
+        return 0;
+    }
 }

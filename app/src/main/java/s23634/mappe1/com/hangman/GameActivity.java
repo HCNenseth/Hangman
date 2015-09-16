@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Gravity;
 import android.view.ViewGroup;
+import android.widget.GridView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -18,6 +19,8 @@ public class GameActivity extends AppCompatActivity {
     private String current_word;
     private LinearLayout wordLayout;
     private TextView[] charViews;
+    private GridView letters;
+    private LetterAdapter ltrAdapt;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +32,7 @@ public class GameActivity extends AppCompatActivity {
         current_word = "";
         wordLayout = (LinearLayout) findViewById(R.id.word);
 
+        letters = (GridView) findViewById(R.id.letters);
         playgame();
     }
 
@@ -52,6 +56,9 @@ public class GameActivity extends AppCompatActivity {
             charViews[i].setBackgroundResource(R.drawable.letter_bg);
 
             wordLayout.addView(charViews[i]);
+
+            ltrAdapt = new LetterAdapter(this);
+            letters.setAdapter(ltrAdapt);
         }
     }
 
