@@ -24,7 +24,7 @@
             android:contentDescription="@string/gallows"
             android:paddingLeft="0dp"
             android:paddingRight="0dp"
-            android:src="@drawable/hangman_zero"/>
+            android:src="@drawable/hangman_0"/>
 
         <ImageView
             android:id="@+id/head"
@@ -33,7 +33,7 @@
             android:contentDescription="@string/head"
             android:paddingLeft="0dp"
             android:paddingRight="0dp"
-            android:src="@drawable/hangman_one"/>
+            android:src="@drawable/hangman_1"/>
 
         <ImageView
             android:id="@+id/body"
@@ -42,7 +42,7 @@
             android:contentDescription="@string/body"
             android:paddingLeft="0dp"
             android:paddingRight="0dp"
-            android:src="@drawable/hangman_two"/>
+            android:src="@drawable/hangman_2"/>
 
         <ImageView
             android:id="@+id/left_arm"
@@ -51,7 +51,7 @@
             android:contentDescription="@string/left_arm"
             android:paddingLeft="0dp"
             android:paddingRight="0dp"
-            android:src="@drawable/hangman_three"/>
+            android:src="@drawable/hangman_3"/>
 
         <ImageView
             android:id="@+id/right_arm"
@@ -60,7 +60,7 @@
             android:contentDescription="@string/right_arm"
             android:paddingLeft="0dp"
             android:paddingRight="0dp"
-            android:src="@drawable/hangman_four"/>
+            android:src="@drawable/hangman_4"/>
 
         <ImageView
             android:id="@+id/left_leg"
@@ -69,7 +69,7 @@
             android:contentDescription="@string/left_leg"
             android:paddingLeft="0dp"
             android:paddingRight="0dp"
-            android:src="@drawable/hangman_five"/>
+            android:src="@drawable/hangman_5"/>
 
         <ImageView
             android:id="@+id/right_leg"
@@ -78,7 +78,7 @@
             android:contentDescription="@string/right_leg"
             android:paddingLeft="0dp"
             android:paddingRight="0dp"
-            android:src="@drawable/hangman_six"/>
+            android:src="@drawable/hangman_6"/>
 
     </RelativeLayout>
 
