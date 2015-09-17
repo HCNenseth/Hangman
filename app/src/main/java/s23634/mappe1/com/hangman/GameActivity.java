@@ -1,6 +1,7 @@
 package s23634.mappe1.com.hangman;
 
 import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.res.Resources;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -68,14 +69,53 @@ public class GameActivity extends AppCompatActivity {
                 charViews[i].setTextColor(Color.BLACK);
             }
         }
+
         if (correct) {
+            if (numCorr == numChars) {
+                disableBtns();
 
-        }
-        if (numCorr == numChars) {
+                AlertDialog.Builder winBuild = new AlertDialog.Builder(this);
+                winBuild.setTitle("Way to go!!");
+                winBuild.setMessage("You got  " + current_word);
+                winBuild.setPositiveButton("One more time", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        GameActivity.this.playgame();
+                    }
+                });
+
+                winBuild.setNegativeButton("Exit", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        GameActivity.this.finish();
+                    }
+                });
+
+                winBuild.show();
+            }
+        } else if (currPart < numParts) {
+            bodyParts[currPart].setVisibility(View.VISIBLE);
+            currPart++;
+        } else {
             disableBtns();
+            AlertDialog.Builder loseBuild = new AlertDialog.Builder(this);
+            loseBuild.setTitle("Noope...");
+            loseBuild.setMessage("That`s not right!!/nCorrect answer was " + current_word);
+            loseBuild.setPositiveButton("One more time", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    GameActivity.this.playgame();
+                }
+            });
 
-            AlertDialog.Builder winBuild = new AlertDialog.Builder(this);
-            winBuild.setTitle("YAY");
+            loseBuild.setNegativeButton("Exit", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    GameActivity.this.finish();
+                }
+            });
+
+            loseBuild.show();
         }
     }
 
