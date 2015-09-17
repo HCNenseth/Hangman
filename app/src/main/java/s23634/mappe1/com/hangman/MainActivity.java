@@ -24,6 +24,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (v.getId() == R.id.play_button) {
             Intent playIntent = new Intent(this, GameActivity.class);
             this.startActivity(playIntent);
+        } else if (v.getId() == R.id.help_button){
+            setContentView(R.layout.info_text);
         }
     }
 
