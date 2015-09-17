@@ -100,7 +100,7 @@ public class GameActivity extends AppCompatActivity {
             disableBtns();
             AlertDialog.Builder loseBuild = new AlertDialog.Builder(this);
             loseBuild.setTitle("Noope...");
-            loseBuild.setMessage("That`s not right!!/nCorrect answer was " + current_word);
+            loseBuild.setMessage("That`s not right!!\nCorrect answer was " + current_word);
             loseBuild.setPositiveButton("One more time", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
