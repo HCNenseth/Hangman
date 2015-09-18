@@ -17,6 +17,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         Button play_button = (Button) findViewById(R.id.play_button);
         play_button.setOnClickListener(this);
+
+        Button help_button = (Button) findViewById(R.id.help_button);
+        help_button.setOnClickListener(this);
     }
 
     @Override
@@ -24,8 +27,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (v.getId() == R.id.play_button) {
             Intent playIntent = new Intent(this, GameActivity.class);
             this.startActivity(playIntent);
-        } else if (v.getId() == R.id.help_button){
-            setContentView(R.layout.info_text);
+        }
+        if (v.getId() == R.id.help_button) {
+            Intent helpIntent = new Intent(this, HelpActivity.class);
+            this.startActivity(helpIntent);
         }
     }
 

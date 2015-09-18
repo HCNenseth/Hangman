@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="dictionary">
-        <item>HODE</item>
-        <item>BIL</item>
-        <item>ROMSKIP</item>
+        <item>HEAD</item>
+        <item>AUTOMOBILE</item>
+        <item>SPACESHIP</item>
         <item>ANDROID</item>
         <item>HIOA</item>
         <item>OSLO</item>
