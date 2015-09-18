@@ -16,15 +16,6 @@
         android:gravity="center"
         android:paddingTop="15dp">
 
-
-        <TextView
-            android:id="@+id/numCorr"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:text="Number"
-            />
-
         <ImageView
             android:id="@+id/gallows"
             android:layout_width="wrap_content"

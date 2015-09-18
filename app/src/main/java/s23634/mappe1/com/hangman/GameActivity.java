@@ -24,7 +24,6 @@ public class GameActivity extends AppCompatActivity {
     private LinearLayout wordLayout;
     private TextView[] charViews;
     private GridView letters;
-    private LetterAdapter ltrAdapt;
 
     private ImageView[] bodyParts;
     private int numParts = 6;
@@ -149,7 +148,7 @@ public class GameActivity extends AppCompatActivity {
 
             wordLayout.addView(charViews[i]);
 
-            ltrAdapt = new LetterAdapter(this);
+            LetterAdapter ltrAdapt = new LetterAdapter(this);
             letters.setAdapter(ltrAdapt);
 
             currPart = 0;
