@@ -7,9 +7,6 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.Button;
 
-/**
- * Created by Hans Christian on 16.09.2015.
- */
 public class LetterAdapter extends BaseAdapter {
     private String[] letters;
     private LayoutInflater letterInflater;

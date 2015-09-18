@@ -131,11 +131,11 @@ public class GameActivity extends AppCompatActivity {
 
         while (newWord.equals(current_word))
             newWord = words[random.nextInt(words.length)];
+
         current_word = newWord;
-
         charViews = new TextView[current_word.length()];
-
         wordLayout.removeAllViews();
+
         for (int i = 0; i < current_word.length(); i++) {
             charViews[i] = new TextView(this);
             charViews[i].setText("" + current_word.charAt(i));

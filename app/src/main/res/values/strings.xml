@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name">Hengt Mann</string>
 
-    <string name="action_settings">Instillinger</string>
+    <string name="action_settings">Avslutt</string>
     <string name="play_button">Spill</string>
     <string name="info_button">Info</string>
 
@@ -16,5 +16,6 @@
 
     <string name="main_image_description">Bakgrunnsbilde hovedskjerm</string>
 
-    <string name="info_text">Noe om spillet</string>
+    <string name="info_text">Hengt mann er et spill hvor du skal gjette på
+        rett ord på seks forsøk eller bli hengt.</string>
 </resources>

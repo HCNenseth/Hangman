@@ -8,5 +8,9 @@
         <item>HIOA</item>
         <item>OSLO</item>
         <item>TOKYO</item>
+        <item>DATAMASKIN</item>
+        <item>BORD</item>
+        <item>TELEFON</item>
+        <item>BOK</item>
     </string-array>
 </resources>
